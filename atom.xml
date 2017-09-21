@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
-  <updated>2017-09-21T03:32:02.000Z</updated>
+  <updated>2017-09-21T12:06:08.000Z</updated>
   <id>http://www.molock.cn/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo绑定独立域名，国内解析到coding，国外解析到github</title>
+    <title>Hexo绑定独立域名并解析到coding和github</title>
     <link href="http://www.molock.cn/48543/"/>
     <id>http://www.molock.cn/48543/</id>
-    <published>2017-09-20T16:00:00.000Z</published>
-    <updated>2017-09-21T03:32:02.000Z</updated>
+    <published>2017-09-21T05:46:42.000Z</published>
+    <updated>2017-09-21T12:06:08.000Z</updated>
     
-    <content type="html"><![CDATA[<p>万网上设置molock.cn的域名解析，CNAME默认指向coding的pages，<br>CNAME海外指向github的pages<br>分别在coding和github上的pages服务上绑定域名molock.cn</p>]]></content>
+    <content type="html"><![CDATA[<p>###Do What<br>hexo博客绑定独立域名，分别解析到coding和github的pages</p><p>###How To:</p><p><strong>1</strong>.部署好coding和github的pages服务，xxx.coding.me 和 xxx.github.io<br>coding配置如下：<br><img src="http://owmgty089.bkt.clouddn.com/73e5116bcb4cbc311fc8eb4cdde9c686.jpg" alt=""><br>github配置如下：<br><img src="http://owmgty089.bkt.clouddn.com/23f8a395e487a2f9929fe2f79c9a8f9d.jpg" alt=""></p><p><strong>2</strong>.配置域名解析，以<a href="http://www.molock.cn/">本博客域名</a>的解析示例，<a href="https://wanwang.aliyun.com/domain/" target="_blank" rel="external">万网</a>的域名配置如下：<br><img src="http://owmgty089.bkt.clouddn.com/ab42193bb4760845909989c685e0abd3.jpg" alt=""></p><p>这样就完成了<a href="http://www.molock.cn/">www.molock.cn</a>的域名解析，海外指向github的pages，国内则使用coding的pages。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;万网上设置molock.cn的域名解析，CNAME默认指向coding的pages，&lt;br&gt;CNAME海外指向github的pages&lt;br&gt;分别在coding和github上的pages服务上绑定域名molock.cn&lt;/p&gt;
+        &lt;p&gt;###Do What&lt;br&gt;hexo博客绑定独立域名，分别解析到coding和github的pages&lt;/p&gt;&lt;p&gt;###How To:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;.部署好coding和github的pages服务，xxx.coding.me 和 xx
       
     
     </summary>
@@ -40,11 +40,11 @@
   </entry>
   
   <entry>
-    <title>Hello World From Hexo</title>
+    <title>Hello World</title>
     <link href="http://www.molock.cn/51587/"/>
     <id>http://www.molock.cn/51587/</id>
-    <published>2017-09-19T16:00:00.000Z</published>
-    <updated>2017-09-21T03:32:02.000Z</updated>
+    <published>2017-09-20T02:46:42.000Z</published>
+    <updated>2017-09-21T11:27:46.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
     
