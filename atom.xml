@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
-  <updated>2017-09-21T14:55:27.000Z</updated>
+  <updated>2017-09-21T16:10:14.000Z</updated>
   <id>http://www.molock.cn/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客搭建教程</title>
+    <link href="http://www.molock.cn/961813026/"/>
+    <id>http://www.molock.cn/961813026/</id>
+    <published>2017-09-21T15:44:20.000Z</published>
+    <updated>2017-09-21T16:10:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="参照Hexo官网搭建："><a href="#参照Hexo官网搭建：" class="headerlink" title="参照Hexo官网搭建："></a>参照<a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a>搭建：</h3><h4 id="安装git-和-node-js，然后几行代码就搭建完成"><a href="#安装git-和-node-js，然后几行代码就搭建完成" class="headerlink" title="安装git 和 node.js，然后几行代码就搭建完成"></a>安装git 和 node.js，然后几行代码就搭建完成</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div><div class="line">$ hexo init blog</div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>简单易用，Hexo造福人类哈<br>更多用法和教程参照<a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a><br><a id="more"></a></p><h3 id="部署到coding-net-和-github-com"><a href="#部署到coding-net-和-github-com" class="headerlink" title="部署到coding.net 和 github.com"></a>部署到coding.net 和 github.com</h3><h4 id="创建代码库repository"><a href="#创建代码库repository" class="headerlink" title="创建代码库repository"></a>创建代码库repository</h4><p>coding.net: 与用户名同名（如：michael）<br>github.com: 用户名.github.io（如：michael.github.io)</p><h4 id="修改blog-config-yml"><a href="#修改blog-config-yml" class="headerlink" title="修改blog/_config.yml"></a>修改blog/_config.yml</h4><p>修改部署配置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:</div><div class="line">    github: git@github.com:michael/michael.github.io.git,master</div><div class="line">    coding: git@git.coding.net:michael/michael.git,master</div></pre></td></tr></table></figure><h3 id="启用pages服务"><a href="#启用pages服务" class="headerlink" title="启用pages服务"></a>启用pages服务</h3><h4 id="进入coding和github相应的repository进行开启"><a href="#进入coding和github相应的repository进行开启" class="headerlink" title="进入coding和github相应的repository进行开启"></a>进入coding和github相应的repository进行开启</h4><h4 id="拥有自己二级域名的博客了"><a href="#拥有自己二级域名的博客了" class="headerlink" title="拥有自己二级域名的博客了"></a>拥有自己二级域名的博客了</h4><h5 id="michael-coding-me"><a href="#michael-coding-me" class="headerlink" title="michael.coding.me"></a>michael.coding.me</h5><h5 id="michael-github-io"><a href="#michael-github-io" class="headerlink" title="michael.github.io"></a>michael.github.io</h5><h3 id="同步blog博客源码到coding或github"><a href="#同步blog博客源码到coding或github" class="headerlink" title="同步blog博客源码到coding或github"></a>同步blog博客源码到coding或github</h3><h4 id="备份博客源码到git托管库"><a href="#备份博客源码到git托管库" class="headerlink" title="备份博客源码到git托管库"></a>备份博客源码到git托管库</h4><p>一来是安全起见，要有备份意识，二来可以多终端维护</p><h4 id="建议使用私人的代码库"><a href="#建议使用私人的代码库" class="headerlink" title="建议使用私人的代码库"></a>建议使用私人的代码库</h4><p>coding可以创建免费的，github需要付费</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;参照Hexo官网搭建：&quot;&gt;&lt;a href=&quot;#参照Hexo官网搭建：&quot; class=&quot;headerlink&quot; title=&quot;参照Hexo官网搭建：&quot;&gt;&lt;/a&gt;参照&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官网&lt;/a&gt;搭建：&lt;/h3&gt;&lt;h4 id=&quot;安装git-和-node-js，然后几行代码就搭建完成&quot;&gt;&lt;a href=&quot;#安装git-和-node-js，然后几行代码就搭建完成&quot; class=&quot;headerlink&quot; title=&quot;安装git 和 node.js，然后几行代码就搭建完成&quot;&gt;&lt;/a&gt;安装git 和 node.js，然后几行代码就搭建完成&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-cli -g&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ hexo init blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;简单易用，Hexo造福人类哈&lt;br&gt;更多用法和教程参照&lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://www.molock.cn/categories/tutorial/"/>
+    
+    
+      <category term="Hexo" scheme="http://www.molock.cn/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>推荐Mac下Markdown编辑和预览神器</title>
