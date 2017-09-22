@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>帆的博客</title>
   
-  <subtitle>记录技术与生活</subtitle>
+  <subtitle>IT技术,教程总结,记录技术与生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
