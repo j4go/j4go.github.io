@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
-  <updated>2017-09-21T16:10:14.000Z</updated>
+  <updated>2017-09-22T03:09:07.000Z</updated>
   <id>http://www.molock.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客首页显示摘要不直接显示全文</title>
+    <link href="http://www.molock.cn/1918698840/"/>
+    <id>http://www.molock.cn/1918698840/</id>
+    <published>2017-09-22T02:02:20.000Z</published>
+    <updated>2017-09-22T03:09:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Hexo博客首页默认显示整篇博文"><a href="#Hexo博客首页默认显示整篇博文" class="headerlink" title="Hexo博客首页默认显示整篇博文"></a>Hexo博客首页默认显示整篇博文</h4><p>有时候文章太长不好，不利于首页加载速度和阅读体验</p><h4 id="文章中设置显示摘要"><a href="#文章中设置显示摘要" class="headerlink" title="文章中设置显示摘要"></a>文章中设置显示摘要</h4><p>文章内容中插入一行<br>《!– more –》(注：把《》换成&lt;&gt;）<br>该标签之上的文本为摘要，需点击阅读全文才能查看剩余的内容。另外也可以在_config.yml配置文件中设置每页显示多少篇文章。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Hexo博客首页默认显示整篇博文&quot;&gt;&lt;a href=&quot;#Hexo博客首页默认显示整篇博文&quot; class=&quot;headerlink&quot; title=&quot;Hexo博客首页默认显示整篇博文&quot;&gt;&lt;/a&gt;Hexo博客首页默认显示整篇博文&lt;/h4&gt;&lt;p&gt;有时候文章太长不好，不利于首
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://www.molock.cn/categories/tutorial/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo博客搭建教程</title>
