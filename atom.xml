@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Molock的博客</title>
+  <title>帆的博客</title>
   
-  <subtitle>记录有用有趣的东西</subtitle>
+  <subtitle>记录技术与生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
