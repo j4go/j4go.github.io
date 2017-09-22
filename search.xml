@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[Hexo博客首页显示摘要不直接显示全文]]></title>
     <url>%2F1918698840%2F</url>
-    <content type="text"><![CDATA[Hexo博客首页默认显示整篇博文有时候文章太长不好，不利于首页加载速度和阅读体验文章中设置显示摘要文章内容中插入一行《!– more –》(注：把《》换成&lt;&gt;）该标签之上的文本为摘要，需点击阅读全文才能查看剩余的内容。另外也可以在_config.yml配置文件中设置每页显示多少篇文章。]]></content>
+    <content type="text"><![CDATA[Hexo博客首页默认显示整篇博文有时候文章太长不好，不利于首页加载速度和阅读体验文章中设置显示摘要文章内容中插入一行1&lt;!-- more --&gt;该标签之上的文本为摘要，需点击阅读全文才能查看剩余的内容。另外也可以在_config.yml配置文件中设置每页显示多少篇文章。]]></content>
       <categories>
         <category>教程</category>
       </categories>
