@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Git日常常用命令汇总]]></title>
     <url>%2F386258413%2F</url>
-    <content type="text"><![CDATA[本篇博文作为git日常常用命令总结，不定时更新拉取自己的代码库，可push1$ git clone git@github.com:myname/myrepository.git拉取代码库，不可直接push1$ git clone git://github.com/myname/myrepository.git常用三剑客命令，add commit push123$ git add .$ git commit -m "add files" .$ git push origin master查看本机github配置1$ git config --list设置本机github用户名与邮箱12$ git config --global user.name "Your Name"$ git config --global user.email yourmail@example.com测试git连接是否正常1$ ssh -T git@github.com生成公钥和密钥1$ ssh-keygen -t rsa -C "yourmail@example.com"]]></content>
+    <content type="text"><![CDATA[本篇博文作为git日常常用命令总结，不定时更新拉取自己的代码库，可push1$ git clone git@github.com:myname/myrepository.git拉取代码库，不可直接push1$ git clone git://github.com/myname/myrepository.git常用三剑客命令，add commit push123$ git add .$ git commit -m "add files" .$ git push origin master查看本机github配置1$ git config --list设置本机github用户名与邮箱12$ git config --global user.name "Your Name"$ git config --global user.email yourmail@example.com测试git连接是否正常1$ ssh -T git@github.com生成公钥和密钥1$ ssh-keygen -t rsa -C "yourmail@example.com"冲突后强制覆盖掉本地12$ git reset --hard$ git pull]]></content>
       <categories>
         <category>教程</category>
       </categories>
