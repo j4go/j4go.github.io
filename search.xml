@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Markdown使用七牛作为图床并且快速地上传图片]]></title>
+    <url>%2F4236391356%2F</url>
+    <content type="text"><![CDATA[使用Markdown编写博文体验很好，上传图片除外用markdown编辑文章，或是在博客后台编写文章，上传图片一直都比较笨拙，体验都不理想我心目中上传图片最理想的使用场景是这样的：当在编辑文字附近贴一张图的时候，拿到这张图，本机存储的图片或者截图等，上传图片要上传到云存储，返回url贴图完马上能预览以上三个过程要快，体验好。搜了网上的解决方案，有一种解决方案基本很好地满足了以上的场景要求，下面介绍使用七牛云作为图床并设置上传图片的快捷方式使用工具qiniu-image-tool，下载按照这个教程操作，注册七牛云，实名认证后最多有免费空间10G，然后结合Mac的Alfred配置上传图片快捷键，我配置的是 cmd+shift+v配置完就可以愉快地进行贴图了，选中本机图片，command+c复制，或者直接截图，然后按配置好的快捷键，然后图片就上传到七牛并返回图片url到剪切板了，如果是使用Mweb编辑器的话按完快捷键会自动粘贴url到markdown并预览。整个过程堪称行云流水，体验非常好。使用markdown进行文字编辑的同学值得一试。]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客SEO优化]]></title>
     <url>%2F3389949667%2F</url>
     <content type="text"><![CDATA[主动给百度提交链接之前的博文Hexo博客主动提交链接给百度收录提到了怎样主动得给百度提交链接和制作站点地图sitemap另外同理也可以使用Google站长，下面几项其他的优化方法Hexo主题Next自带SEO优化选项hexo博客next提供了seo优化选项，在主题配置文件_config.yml中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文title等，然后相同文件下有个关键字选项keywords，填充上，写博文时最好每篇博文都加上keywords。hexo的根目录配置文件_config.yml中title、subtitle和description也建议填上。开启seo优化后可以查看网页源码跟之前有什么不同。博客网址链接URL唯一化永久化使用插件hexo-abbrlink可以做到，安装：1npm install hexo-abbrlink --save然后hexo的根目录配置文件_config.yml中修改：1234permalink: :abbrlink/abbrlink: alg: crc32 # 算法：crc16(default) and crc32 rep: dec # 进制：dec(default) and hex这样就确保了博文链接的唯一化，只要不修改md文件的abbrlink的值，url就永久不会改变。如此md文件名和文件内容也可以随便改了。这样也有利于SEO优化。添加robots.txthexo的source文件下新建robots.txt，内容如下:1234567891011121314User-agent: *Allow: /Allow: /categories/Allow: /tags/Allow: /archives/Disallow: /vendors/Disallow: /js/Disallow: /css/Disallow: /fonts/Disallow: /vendors/Disallow: /fancybox/Sitemap: http://www.molock.cn/sitemap.xmlSitemap: http://www.molock.cn/baidusitemap.xmlrobots.txt是搜索引擎蜘蛛协议，告诉引擎哪些要收录，哪些禁止收录。URL添加nofollow标签网站中的href出站链接最好添加nofollow标签，如：1&#123;&#123; __('footer.powered', '&lt;a class="theme-link" href="http://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;改成1&#123;&#123; __('footer.powered', '&lt;a class="theme-link" href="http://hexo.io" rel="external nofollow"&gt;Hexo&lt;/a&gt;') &#125;&#125;这种方式修改貌似只能一个一个修改，有点麻烦，只修改了几处地方，或许有空可以研究hexo和next主题代码看如何进一步优化。更多的seo优化有待进一步的探索和检验未完待续]]></content>
