@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>帆的博客</title>
   
-  <subtitle>总结IT技术知识,记录技术与生活</subtitle>
+  <subtitle>记录有用有趣的技术与生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.molock.cn/"/>
-  <updated>2017-09-22T15:42:40.000Z</updated>
+  <updated>2017-09-23T04:38:08.000Z</updated>
   <id>http://www.molock.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ssh免密码远程登录</title>
+    <link href="http://www.molock.cn/3689060919/"/>
+    <id>http://www.molock.cn/3689060919/</id>
+    <published>2017-09-23T01:06:46.000Z</published>
+    <updated>2017-09-23T04:38:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="ssh远程登录服务器"><a href="#ssh远程登录服务器" class="headerlink" title="ssh远程登录服务器"></a>ssh远程登录服务器</h3><p>ssh登录使用ssh user@host 的方式，如：<br><img src="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg" alt=""><br>这种方式比较低效，尤其是密码复杂，每次需要复制粘贴</p><a id="more"></a><h3 id="ssh免输入密码直接远程登录服务器"><a href="#ssh免输入密码直接远程登录服务器" class="headerlink" title="ssh免输入密码直接远程登录服务器"></a>ssh免输入密码直接远程登录服务器</h3><p>客户端机器A想要远程登录目标机器B，使用ssh-keygen</p><h4 id="机器A上的操作"><a href="#机器A上的操作" class="headerlink" title="机器A上的操作"></a>机器A上的操作</h4><p>生成私钥和公钥：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa</div></pre></td></tr></table></figure><p><img src="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg" alt=""><br>提示输入密码，直接按回车就行<br>生成的密钥在 ~/.ssh 下：<br>id_rsa是私钥，id_rsa.pub是公钥</p><h4 id="机器B上的操作"><a href="#机器B上的操作" class="headerlink" title="机器B上的操作"></a>机器B上的操作</h4><p>创建 ~/.ssh/authorized_keys 文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ touch ~/.ssh/authorized_keys</div></pre></td></tr></table></figure><p>查看 ~/.ssh 和 authorized_keys 的权限<br><img src="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg" alt=""><br>~/.ssh 的权限是700，authorized_keys的权限是600<br>如果权限不对需要改过来：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ chmod 700 ~/.ssh</div><div class="line">$ chmod 600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure><p>最后把机器A的公钥id_rsa.pub里面的内容复制到~/.ssh/authorized_keys<br>配置完成，这样机器A再使用ssh user@host就自动登录到机器B了。</p><h3 id="更优雅地使用ssh"><a href="#更优雅地使用ssh" class="headerlink" title="更优雅地使用ssh"></a>更优雅地使用ssh</h3><h4 id="每次要输入ssh-user-host-也没那么方便"><a href="#每次要输入ssh-user-host-也没那么方便" class="headerlink" title="每次要输入ssh user@host 也没那么方便"></a>每次要输入ssh user@host 也没那么方便</h4><p>更便捷的方式是alias设置别名，只需要改shell配置文件。<br>我使用的是zsh，修改~/.zshrc</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim ~/.zshrc</div></pre></td></tr></table></figure><p>例如添加：</p><blockquote><p>alias 150=”ssh idi@10.3.8.150”</p></blockquote><p>source生效，这是很实用的小技巧，可以举一反三。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> ~/.zshrc</div></pre></td></tr></table></figure><p>这样要想ssh登录到10.3.8.150，只需打开终端后输入150即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;ssh远程登录服务器&quot;&gt;&lt;a href=&quot;#ssh远程登录服务器&quot; class=&quot;headerlink&quot; title=&quot;ssh远程登录服务器&quot;&gt;&lt;/a&gt;ssh远程登录服务器&lt;/h3&gt;&lt;p&gt;ssh登录使用ssh user@host 的方式，如：&lt;br&gt;&lt;img src=&quot;http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;这种方式比较低效，尤其是密码复杂，每次需要复制粘贴&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="http://www.molock.cn/categories/tutorial/"/>
+    
+    
+      <category term="Linux" scheme="http://www.molock.cn/tags/linux/"/>
+    
+      <category term="ssh" scheme="http://www.molock.cn/tags/ssh/"/>
+    
+  </entry>
   
   <entry>
     <title>Git日常常用命令汇总</title>
@@ -69,7 +93,7 @@
     <link href="http://www.molock.cn/1918698840/"/>
     <id>http://www.molock.cn/1918698840/</id>
     <published>2017-09-22T02:02:20.000Z</published>
-    <updated>2017-09-22T16:36:03.000Z</updated>
+    <updated>2017-09-23T04:04:45.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Hexo博客首页默认显示整篇博文"><a href="#Hexo博客首页默认显示整篇博文" class="headerlink" title="Hexo博客首页默认显示整篇博文"></a>Hexo博客首页默认显示整篇博文</h4><p>有时候文章太长不好，不利于首页加载速度和阅读体验</p><h4 id="文章中设置显示摘要"><a href="#文章中设置显示摘要" class="headerlink" title="文章中设置显示摘要"></a>文章中设置显示摘要</h4><p>文章内容中插入一行</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- more --&gt;</span></div></pre></td></tr></table></figure><p>该标签之上的文本为摘要，需点击阅读全文才能查看剩余的内容。另外也可以在_config.yml配置文件中设置每页显示多少篇文章。</p>]]></content>
     
