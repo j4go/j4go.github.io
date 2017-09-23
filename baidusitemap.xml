@@ -3,9 +3,32 @@
 
 
     
+    
+  <url>
+    <loc>http://www.molock.cn/1243066710/</loc>
+    <lastmod>2017-09-23T16:16:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-09-20T12:33:39.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程" url="http://www.molock.cn/categories/tutorial/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://www.molock.cn/3226021277/</loc>
-    <lastmod>2017-09-23T15:12:27.000Z</lastmod>
+    <lastmod>2017-09-23T16:14:43.000Z</lastmod>
     <data>
         <display>
         <title>Hexo去掉码市跳转页</title>
@@ -46,7 +69,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://www.molock.cn/1520157658/</loc>
@@ -199,28 +221,6 @@
         <display>
         <title>Markdown使用七牛作为图床并且快速地上传图片</title>
         <pubTime>2017-09-23T07:59:27.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="教程" url="http://www.molock.cn/categories/tutorial/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.molock.cn/1243066710/</loc>
-    <lastmod>2017-09-22T15:50:52.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-09-20T12:33:39.000Z</pubTime>
         
         <tag>Hexo</tag>
          
