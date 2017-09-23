@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo去掉码市跳转页]]></title>
+    <url>%2F3226021277%2F</url>
+    <content type="text"><![CDATA[去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将1&lt;div class="theme-info"&gt;这个div改成：1&lt;div class="theme-info"&gt;&lt;span&gt;Hosted by &lt;a href="https://pages.coding.me" rel="external nofollow"&gt;Coding Pages&lt;/a&gt;&lt;/span&lt;/div&gt;即可，显示效果如下：确认提交修改后，等待码市的验证，大概两个工作日之后审核通过大功告成，跳转页去掉了。]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown使用七牛作为图床并且快速地上传图片]]></title>
     <url>%2F4236391356%2F</url>
     <content type="text"><![CDATA[Markdown编写博文体验很好但，上传图片除外。用markdown编辑文章，或是在博客后台编写文章，上传图片一直都比较笨拙，体验都不理想。比较好的文章贴图体验我心目中上传图片最理想的使用场景是这样的：当在编辑文字附近贴一张图的时候，拿到这张图，本机存储的图片或者截图等，上传图片要上传到云存储，返回url贴图完马上能预览以上三个过程要快，体验好。搜了网上的解决方案，有一种解决方案基本很好地满足了以上的场景要求，下面介绍使用七牛云图床并设置贴图快捷方式使用工具qiniu-image-tool，下载按照这个教程操作，注册七牛云，实名认证后最多有免费空间10G，然后结合Mac的Alfred配置上传图片快捷键，我配置的是 cmd+shift+v配置完就可以愉快地进行贴图了，选中本机图片，command+c复制，或者直接截图，然后按配置好的快捷键，然后图片就上传到七牛并返回图片url到剪切板了，如果是使用Mweb编辑器的话按完快捷键会自动粘贴url到markdown并预览。整个过程堪称行云流水，体验非常好。使用markdown进行文字编辑的同学值得一试。]]></content>
