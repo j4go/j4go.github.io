@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://www.molock.cn/3389949667/</loc>
+    <lastmod>2017-09-23T06:34:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo博客SEO优化</title>
+        <pubTime>2017-09-23T05:00:25.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程" url="http://www.molock.cn/categories/tutorial/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.molock.cn/3689060919/</loc>
-    <lastmod>2017-09-23T04:38:08.000Z</lastmod>
+    <lastmod>2017-09-23T04:38:33.000Z</lastmod>
     <data>
         <display>
         <title>Ssh免密码远程登录</title>
