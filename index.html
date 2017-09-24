@@ -372,7 +372,7 @@
       
         
           
-            <h2 id="去掉码市跳转页"><a href="#去掉码市跳转页" class="headerlink" title="去掉码市跳转页"></a>去掉码市跳转页</h2><p>Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：<br><img src="http://owmgty089.bkt.clouddn.com/9f78b049c122eb7d3f386444c2d4f54e.jpg" alt=""><br>这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将</p>
+            <h2 id="去掉码市跳转页"><a href="#去掉码市跳转页" class="headerlink" title="去掉码市跳转页"></a>去掉码市跳转页</h2><p>Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：<br><img src="http://owmgty089.bkt.clouddn.com/9f78b049c122eb7d3f386444c2d4f54e.jpg" alt=""><br>这里以加入文字版的方式，编辑themes/next/layout/_partials/footer.swig文件，将</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;theme-info&quot;&gt;</div></pre></td></tr></table></figure>
 <p>这个div改成：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;theme-info&quot;&gt;</div><div class="line">&lt;span&gt;Hosted by </div><div class="line">&lt;a href=&quot;https://pages.coding.me&quot; rel=&quot;external nofollow&quot;&gt;Coding Pages&lt;/a&gt;</div><div class="line">&lt;/span</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
