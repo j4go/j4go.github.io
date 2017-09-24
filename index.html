@@ -725,7 +725,7 @@
       
         
           
-            <h2 id="主动给百度提交链接"><a href="#主动给百度提交链接" class="headerlink" title="主动给百度提交链接"></a>主动给百度提交链接</h2><p>之前的博文<a href="http://www.molock.cn/3367139573/">Hexo博客主动提交链接给百度收录</a>提到了怎样主动得给百度提交链接和制作站点地图sitemap</p>
+            <h2 id="主动给百度提交链接"><a href="#主动给百度提交链接" class="headerlink" title="主动给百度提交链接"></a>主动给百度提交链接</h2><p>之前的博文<a href="http://www.molock.cn/articles/31065.html">Hexo博客主动提交链接给百度收录</a>提到了怎样主动得给百度提交链接和制作站点地图sitemap</p>
 <p>另外同理也可以使用<a href="https://www.google.com/webmasters/" target="_blank" rel="external">Google站长</a>，下面几项其他的优化方法</p>
 <h2 id="Next主题自带SEO优化选项"><a href="#Next主题自带SEO优化选项" class="headerlink" title="Next主题自带SEO优化选项"></a>Next主题自带SEO优化选项</h2><p>hexo博客next提供了seo优化选项，在<strong>主题配置文件_config.yml</strong>中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文title等，然后相同文件下有个关键字选项keywords，填充上，写博文时最好每篇博文都加上keywords。hexo的根目录配置文件_config.yml中title、subtitle和description也建议填上。开启seo优化后可以查看网页源码跟之前有什么不同。</p>
 <h2 id="博客网址链接URL唯一且永久化"><a href="#博客网址链接URL唯一且永久化" class="headerlink" title="博客网址链接URL唯一且永久化"></a>博客网址链接URL唯一且永久化</h2><p>使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="external">hexo-abbrlink</a>可以做到，安装：</p>
@@ -883,7 +883,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  331
+                  328
                 </span>
               
 
@@ -907,17 +907,17 @@
       
         
           
-            <h2 id="ssh远程登录服务器"><a href="#ssh远程登录服务器" class="headerlink" title="ssh远程登录服务器"></a>ssh远程登录服务器</h2><p>ssh登录使用ssh user@host 的方式，如：<br><img src="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg" alt=""><br>这种方式比较低效，尤其是密码复杂，每次需要复制粘贴</p>
-<h2 id="ssh免输入密码远程登录服务器"><a href="#ssh免输入密码远程登录服务器" class="headerlink" title="ssh免输入密码远程登录服务器"></a>ssh免输入密码远程登录服务器</h2><p>客户端机器A想要远程登录目标机器B，使用ssh-keygen</p>
+            <h2 id="一般的SSH远程登录服务器"><a href="#一般的SSH远程登录服务器" class="headerlink" title="一般的SSH远程登录服务器"></a>一般的SSH远程登录服务器</h2><p>ssh登录使用ssh user@host 的方式，如：<br><img src="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg" alt="-w350"><br>这种方式比较低效，尤其是密码复杂，每次需要复制粘贴</p>
+<h2 id="SSH免输入密码远程登录服务器"><a href="#SSH免输入密码远程登录服务器" class="headerlink" title="SSH免输入密码远程登录服务器"></a>SSH免输入密码远程登录服务器</h2><p>客户端机器A想要远程登录目标机器B，使用ssh-keygen</p>
 <h3 id="机器A上的操作"><a href="#机器A上的操作" class="headerlink" title="机器A上的操作"></a>机器A上的操作</h3><p>生成私钥和公钥：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa</div></pre></td></tr></table></figure>
-<p><img src="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg" alt=""><br>提示输入密码，直接按回车就行<br>生成的密钥在 ~/.ssh 下：<br>id_rsa是私钥，id_rsa.pub是公钥</p>
+<p><img src="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg" alt=""><br>提示输入密码，直接按回车就行<br>生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是公钥</p>
 <h3 id="机器B上的操作"><a href="#机器B上的操作" class="headerlink" title="机器B上的操作"></a>机器B上的操作</h3><p>创建 ~/.ssh/authorized_keys 文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ touch ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
-<p>查看 ~/.ssh 和 authorized_keys 的权限<br><img src="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg" alt=""><br>~/.ssh 的权限是700，authorized_keys的权限是600<br>如果权限不对需要改过来：</p>
+<p>查看 ~/.ssh 和 authorized_keys 的权限<br><img src="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg" alt=""><br>~/.ssh 的权限是700，authorized_keys的权限是600，如果权限不对需要改过来：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ chmod 700 ~/.ssh</div><div class="line">$ chmod 600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
-<p>最后把机器A的公钥id_rsa.pub里面的内容复制到~/.ssh/authorized_keys<br>配置完成，这样机器A再使用ssh user@host就自动登录到机器B了。</p>
-<h2 id="更优雅地使用ssh"><a href="#更优雅地使用ssh" class="headerlink" title="更优雅地使用ssh"></a>更优雅地使用ssh</h2><h3 id="每次要输ssh-user-host也没那么方便"><a href="#每次要输ssh-user-host也没那么方便" class="headerlink" title="每次要输ssh user@host也没那么方便"></a>每次要输ssh user@host也没那么方便</h3><p>更便捷的方式是alias设置别名，只需要改shell配置文件。<br>我使用的是zsh，修改~/.zshrc</p>
+<p>最后把机器A的公钥id_rsa.pub里面的内容复制到~/.ssh/authorized_keys就配置结束了，这样机器A再使用ssh user@host就自动登录到机器B。</p>
+<h2 id="更优雅地使用SSH"><a href="#更优雅地使用SSH" class="headerlink" title="更优雅地使用SSH"></a>更优雅地使用SSH</h2><h3 id="使用命令别名"><a href="#使用命令别名" class="headerlink" title="使用命令别名"></a>使用命令别名</h3><p>更便捷的方式是alias设置别名，只需要改shell配置文件。我使用的是zsh，修改~/.zshrc</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim ~/.zshrc</div></pre></td></tr></table></figure>
 <p>例如添加：</p>
 <blockquote>
@@ -1765,7 +1765,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  284
+                  282
                 </span>
               
 
@@ -1790,10 +1790,10 @@
         
           
             <h2 id="MWeb-for-Mac-简介，官网介绍摘要"><a href="#MWeb-for-Mac-简介，官网介绍摘要" class="headerlink" title="MWeb for Mac 简介，官网介绍摘要"></a>MWeb for Mac 简介，<a href="http://zh.mweb.im/" target="_blank" rel="external">官网</a>介绍摘要</h2><h3 id="界面简洁高效、功能强大"><a href="#界面简洁高效、功能强大" class="headerlink" title="界面简洁高效、功能强大"></a>界面简洁高效、功能强大</h3><p>全面支持 Github Flavored Markdown 语法如 TOC、Table、Fenced code block、LaTex、Task lists、Footnote 等。</p>
-<h3 id="原生的-OS-X-应用"><a href="#原生的-OS-X-应用" class="headerlink" title="原生的 OS X 应用"></a>原生的 OS X 应用</h3><p>MWeb 是原生的 OS X 应用，原生的应用运行速度更快，系统结合更完美，带来更好的写作体验！<br>支持黑色主题、Typewriter Scrolling 写作模式。还支持拖拽或粘贴插入图片和附件，首创的在编辑器内直接显示本地图片的功能，很好的解决了 Markdown 写作时必须在预览才能看到图片的问题。<br>为了提高 LaTex 公式的写作体验，MWeb 增加了在编辑器内实时预览 LaTex 公式的功能，非常好用。另外还有边编辑边预览写作模式、大纲视图等非常实用的功能。</p>
-<h2 id="实际使用感受"><a href="#实际使用感受" class="headerlink" title="实际使用感受"></a>实际使用感受</h2><p>试用了几款Mardown编辑和预览的软件，就这款最满意，界面不算复杂，功能很强大，上手也简单。<br>有免费版也有付费版，推荐力所能及的使用专业版</p>
+<h3 id="原生的-OS-X-应用"><a href="#原生的-OS-X-应用" class="headerlink" title="原生的 OS X 应用"></a>原生的 OS X 应用</h3><p>MWeb 是原生的 OS X 应用，原生的应用运行速度更快，系统结合更完美，带来更好的写作体验！<br>支持黑色主题、Typewriter Scrolling 写作模式。还支持拖拽或粘贴插入图片和附件，首创的在编辑器内直接显示本地图片的功能，很好的解决了 Markdown 写作时必须在预览才能看到图片的问题。为了提高 LaTex 公式的写作体验，MWeb 增加了在编辑器内实时预览 LaTex 公式的功能，非常好用。另外还有边编辑边预览写作模式、大纲视图等非常实用的功能。</p>
+<h2 id="实际使用感受"><a href="#实际使用感受" class="headerlink" title="实际使用感受"></a>实际使用感受</h2><p>试用了几款Mardown编辑和预览的软件，就这款最满意，界面不算复杂，功能很强大，上手也简单。有免费版也有付费版，推荐力所能及的使用专业版。</p>
 <p><img src="http://owmgty089.bkt.clouddn.com/b874e978447274915bd48677e7df304e.jpg" alt=""></p>
-<p>我的使用截图<br><img src="http://owmgty089.bkt.clouddn.com/bab4350e34074900c1479bf365e182cb.jpg" alt=""></p>
+<p>使用截图<br><img src="http://owmgty089.bkt.clouddn.com/bab4350e34074900c1479bf365e182cb.jpg" alt=""></p>
 
           
         

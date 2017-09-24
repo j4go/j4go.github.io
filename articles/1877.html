@@ -71,21 +71,21 @@
 
 
 
-<meta name="description" content="ssh远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 ssh免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是公钥">
+<meta name="description" content="一般的SSH远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 SSH免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是">
 <meta name="keywords" content="ssh远程登录,ssh免密码,ssh-keygen,ssh-keygen -t rsa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH免密码远程登录">
 <meta property="og:url" content="http://www.molock.cn/articles/1877.html">
 <meta property="og:site_name" content="帆的博客">
-<meta property="og:description" content="ssh远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 ssh免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是公钥">
+<meta property="og:description" content="一般的SSH远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 SSH免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg">
-<meta property="og:updated_time" content="2017-09-24T02:10:37.000Z">
+<meta property="og:updated_time" content="2017-09-24T03:36:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH免密码远程登录">
-<meta name="twitter:description" content="ssh远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 ssh免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是公钥">
+<meta name="twitter:description" content="一般的SSH远程登录服务器ssh登录使用ssh user@host 的方式，如：这种方式比较低效，尤其是密码复杂，每次需要复制粘贴 SSH免输入密码远程登录服务器客户端机器A想要远程登录目标机器B，使用ssh-keygen 机器A上的操作生成私钥和公钥： 1$ ssh-keygen -t rsa 提示输入密码，直接按回车就行生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是">
 <meta name="twitter:image" content="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg">
 
 
@@ -356,7 +356,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  331
+                  328
                 </span>
               
 
@@ -378,17 +378,17 @@
       
 
       
-        <h2 id="ssh远程登录服务器"><a href="#ssh远程登录服务器" class="headerlink" title="ssh远程登录服务器"></a>ssh远程登录服务器</h2><p>ssh登录使用ssh user@host 的方式，如：<br><img src="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg" alt=""><br>这种方式比较低效，尤其是密码复杂，每次需要复制粘贴</p>
-<h2 id="ssh免输入密码远程登录服务器"><a href="#ssh免输入密码远程登录服务器" class="headerlink" title="ssh免输入密码远程登录服务器"></a>ssh免输入密码远程登录服务器</h2><p>客户端机器A想要远程登录目标机器B，使用ssh-keygen</p>
+        <h2 id="一般的SSH远程登录服务器"><a href="#一般的SSH远程登录服务器" class="headerlink" title="一般的SSH远程登录服务器"></a>一般的SSH远程登录服务器</h2><p>ssh登录使用ssh user@host 的方式，如：<br><img src="http://owmgty089.bkt.clouddn.com/41bc2e64e4783749f5693ce25e28a0ba.jpg" alt="-w350"><br>这种方式比较低效，尤其是密码复杂，每次需要复制粘贴</p>
+<h2 id="SSH免输入密码远程登录服务器"><a href="#SSH免输入密码远程登录服务器" class="headerlink" title="SSH免输入密码远程登录服务器"></a>SSH免输入密码远程登录服务器</h2><p>客户端机器A想要远程登录目标机器B，使用ssh-keygen</p>
 <h3 id="机器A上的操作"><a href="#机器A上的操作" class="headerlink" title="机器A上的操作"></a>机器A上的操作</h3><p>生成私钥和公钥：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa</div></pre></td></tr></table></figure>
-<p><img src="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg" alt=""><br>提示输入密码，直接按回车就行<br>生成的密钥在 ~/.ssh 下：<br>id_rsa是私钥，id_rsa.pub是公钥</p>
+<p><img src="http://owmgty089.bkt.clouddn.com/c75c7c8c975e5d17760a92c3a47c9502.jpg" alt=""><br>提示输入密码，直接按回车就行<br>生成的密钥在 ~/.ssh 下：id_rsa是私钥，id_rsa.pub是公钥</p>
 <h3 id="机器B上的操作"><a href="#机器B上的操作" class="headerlink" title="机器B上的操作"></a>机器B上的操作</h3><p>创建 ~/.ssh/authorized_keys 文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ touch ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
-<p>查看 ~/.ssh 和 authorized_keys 的权限<br><img src="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg" alt=""><br>~/.ssh 的权限是700，authorized_keys的权限是600<br>如果权限不对需要改过来：</p>
+<p>查看 ~/.ssh 和 authorized_keys 的权限<br><img src="http://owmgty089.bkt.clouddn.com/df9d435faabf0c3c4b8627ebc5a12ad8.jpg" alt=""><br>~/.ssh 的权限是700，authorized_keys的权限是600，如果权限不对需要改过来：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ chmod 700 ~/.ssh</div><div class="line">$ chmod 600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
-<p>最后把机器A的公钥id_rsa.pub里面的内容复制到~/.ssh/authorized_keys<br>配置完成，这样机器A再使用ssh user@host就自动登录到机器B了。</p>
-<h2 id="更优雅地使用ssh"><a href="#更优雅地使用ssh" class="headerlink" title="更优雅地使用ssh"></a>更优雅地使用ssh</h2><h3 id="每次要输ssh-user-host也没那么方便"><a href="#每次要输ssh-user-host也没那么方便" class="headerlink" title="每次要输ssh user@host也没那么方便"></a>每次要输ssh user@host也没那么方便</h3><p>更便捷的方式是alias设置别名，只需要改shell配置文件。<br>我使用的是zsh，修改~/.zshrc</p>
+<p>最后把机器A的公钥id_rsa.pub里面的内容复制到~/.ssh/authorized_keys就配置结束了，这样机器A再使用ssh user@host就自动登录到机器B。</p>
+<h2 id="更优雅地使用SSH"><a href="#更优雅地使用SSH" class="headerlink" title="更优雅地使用SSH"></a>更优雅地使用SSH</h2><h3 id="使用命令别名"><a href="#使用命令别名" class="headerlink" title="使用命令别名"></a>使用命令别名</h3><p>更便捷的方式是alias设置别名，只需要改shell配置文件。我使用的是zsh，修改~/.zshrc</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim ~/.zshrc</div></pre></td></tr></table></figure>
 <p>例如添加：</p>
 <blockquote>
@@ -596,7 +596,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh远程登录服务器"><span class="nav-number">1.</span> <span class="nav-text">ssh远程登录服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh免输入密码远程登录服务器"><span class="nav-number">2.</span> <span class="nav-text">ssh免输入密码远程登录服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#机器A上的操作"><span class="nav-number">2.1.</span> <span class="nav-text">机器A上的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器B上的操作"><span class="nav-number">2.2.</span> <span class="nav-text">机器B上的操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更优雅地使用ssh"><span class="nav-number">3.</span> <span class="nav-text">更优雅地使用ssh</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#每次要输ssh-user-host也没那么方便"><span class="nav-number">3.1.</span> <span class="nav-text">每次要输ssh user@host也没那么方便</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一般的SSH远程登录服务器"><span class="nav-number">1.</span> <span class="nav-text">一般的SSH远程登录服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH免输入密码远程登录服务器"><span class="nav-number">2.</span> <span class="nav-text">SSH免输入密码远程登录服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#机器A上的操作"><span class="nav-number">2.1.</span> <span class="nav-text">机器A上的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器B上的操作"><span class="nav-number">2.2.</span> <span class="nav-text">机器B上的操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更优雅地使用SSH"><span class="nav-number">3.</span> <span class="nav-text">更优雅地使用SSH</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用命令别名"><span class="nav-number">3.1.</span> <span class="nav-text">使用命令别名</span></a></li></ol></li></ol></div>
             
 
           </div>
