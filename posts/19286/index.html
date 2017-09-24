@@ -79,7 +79,7 @@
 <meta property="og:site_name" content="帆的博客">
 <meta property="og:description" content="主动给百度提交链接之前的博文Hexo博客主动提交链接给百度收录提到了怎样主动得给百度提交链接和制作站点地图sitemap 另外同理也可以使用Google站长，下面几项其他的优化方法 Next主题自带SEO优化选项hexo博客next提供了seo优化选项，在主题配置文件_config.yml中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文titl">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-24T04:36:44.000Z">
+<meta property="og:updated_time" content="2017-09-24T06:23:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客SEO优化">
 <meta name="twitter:description" content="主动给百度提交链接之前的博文Hexo博客主动提交链接给百度收录提到了怎样主动得给百度提交链接和制作站点地图sitemap 另外同理也可以使用Google站长，下面几项其他的优化方法 Next主题自带SEO优化选项hexo博客next提供了seo优化选项，在主题配置文件_config.yml中有个选项是seo，默认是false，改成true即开启了seo优化，会进行一些seo优化，如改变博文titl">
@@ -352,7 +352,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  514
+                  515
                 </span>
               
 
@@ -386,10 +386,10 @@
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">User-<span class="string">agent:</span> *</div><div class="line"><span class="string">Allow:</span> /</div><div class="line"><span class="string">Allow:</span> <span class="regexp">/categories/</span></div><div class="line"><span class="string">Allow:</span> <span class="regexp">/tags/</span></div><div class="line"><span class="string">Allow:</span> <span class="regexp">/archives/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/vendors/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/js/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/css/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/fonts/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/vendors/</span></div><div class="line"><span class="string">Disallow:</span> <span class="regexp">/fancybox/</span></div><div class="line"></div><div class="line"><span class="string">Sitemap:</span> <span class="string">http:</span><span class="comment">//www.molock.cn/sitemap.xml</span></div><div class="line"><span class="string">Sitemap:</span> <span class="string">http:</span><span class="comment">//www.molock.cn/baidusitemap.xml</span></div></pre></td></tr></table></figure>
 <p>robots.txt是搜索引擎蜘蛛协议，告诉引擎哪些要收录，哪些禁止收录。</p>
 <h2 id="URL添加nofollow标签"><a href="#URL添加nofollow标签" class="headerlink" title="URL添加nofollow标签"></a>URL添加nofollow标签</h2><p>网站中的href出站链接最好添加nofollow标签，如：</p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>, '&lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"http://hexo.io"</span>&gt;Hexo&lt;/a&gt;') &#125;&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>,</div><div class="line"> '&lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"http://hexo.io"</span>&gt;Hexo&lt;/a&gt;'</div><div class="line"> ) &#125;&#125;</div></pre></td></tr></table></figure>
 <p>改成</p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>, '&lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"http://hexo.io"</span> rel=<span class="string">"external nofollow"</span>&gt;Hexo&lt;/a&gt;') &#125;&#125;</div></pre></td></tr></table></figure>
-<p>这种方式修改貌似只能一个一个修改，有点麻烦，只修改了几处地方，或许有空可以研究hexo和next主题代码看如何进一步优化。</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;&#123; __(<span class="name">'footer.powered'</span>, </div><div class="line">'&lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"http://hexo.io"</span> rel=</div><div class="line"><span class="string">"external nofollow"</span>&gt;Hexo&lt;/a&gt;') &#125;&#125;</div></pre></td></tr></table></figure>
+<p>这种方式修改貌似只能一个一个修改，有点麻烦，只修改了几处地方，或许有空可以研究hexo和next主题代码看如何进一步优化。ss</p>
 
       
     </div>

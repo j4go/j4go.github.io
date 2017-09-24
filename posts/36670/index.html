@@ -71,21 +71,21 @@
 
 
 
-<meta name="description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 1&amp;lt;div class=&quot;theme-info&quot;&amp;g">
+<meta name="description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 12345&amp;lt;div class=&quot;theme-inf">
 <meta name="keywords" content="Hexo,码市跳转页,coding跳转页">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo去掉码市跳转页">
 <meta property="og:url" content="http://www.molock.cn/posts/36670/index.html">
 <meta property="og:site_name" content="帆的博客">
-<meta property="og:description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 1&amp;lt;div class=&quot;theme-info&quot;&amp;g">
+<meta property="og:description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 12345&amp;lt;div class=&quot;theme-inf">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/9f78b049c122eb7d3f386444c2d4f54e.jpg">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/38537baeb78968465f627590e6ea7164.jpg">
 <meta property="og:image" content="http://owmgty089.bkt.clouddn.com/153ffee41d7a9a925f6ced01355d748e.jpg">
-<meta property="og:updated_time" content="2017-09-24T03:50:16.000Z">
+<meta property="og:updated_time" content="2017-09-24T06:22:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo去掉码市跳转页">
-<meta name="twitter:description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 1&amp;lt;div class=&quot;theme-info&quot;&amp;g">
+<meta name="twitter:description" content="去掉码市跳转页Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将 1&amp;lt;div class=&quot;theme-info&quot;&amp;gt; 这个div改成： 12345&amp;lt;div class=&quot;theme-inf">
 <meta name="twitter:image" content="http://owmgty089.bkt.clouddn.com/9f78b049c122eb7d3f386444c2d4f54e.jpg">
 
 
@@ -381,7 +381,7 @@
         <h2 id="去掉码市跳转页"><a href="#去掉码市跳转页" class="headerlink" title="去掉码市跳转页"></a>去掉码市跳转页</h2><p>Hexo博客使用码市(coding.net)的Pages服务的话，默认是有跳转页面的，很影响体验。官方已提供去掉跳转页的方法：<br><img src="http://owmgty089.bkt.clouddn.com/9f78b049c122eb7d3f386444c2d4f54e.jpg" alt=""><br>这里以加入文字版的方式，编辑themes/next/layout//_partials/footer.swig文件，将</p>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"theme-info"</span>&gt;</div></pre></td></tr></table></figure>
 <p>这个div改成：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"theme-info"</span>&gt;<span class="xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span>Hosted by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://pages.coding.me"</span>   <span class="attr">rel</span>=<span class="string">"external nofollow"</span>&gt;</span>Coding Pages<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&lt;/<span class="attr">div</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"theme-info"</span>&gt;</div><div class="line">&lt;span&gt;Hosted by </div><div class="line">&lt;a href=<span class="string">"https://pages.coding.me"</span> rel=<span class="string">"external nofollow"</span>&gt;Coding Pages&lt;<span class="regexp">/a&gt;</span></div><div class="line"><span class="regexp">&lt;/</span>span</div><div class="line">&lt;<span class="regexp">/div&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="显示效果"><a href="#显示效果" class="headerlink" title="显示效果"></a>显示效果</h2><p><img src="http://owmgty089.bkt.clouddn.com/38537baeb78968465f627590e6ea7164.jpg" alt=""><br>确认提交修改后，等待码市的验证，大概两个工作日之后审核通过<br><img src="http://owmgty089.bkt.clouddn.com/153ffee41d7a9a925f6ced01355d748e.jpg" alt=""><br>这样跳转页就去掉了。</p>
 
       
